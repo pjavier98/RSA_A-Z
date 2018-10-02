@@ -5,8 +5,9 @@
 # include  " ../header/header.h "
 
 lli exponentiation (lli num, lli exp, lli mod);
-/*
- *
+/* Entra em um loop ate que o ultimo bit seja exp seja 1, na qual dara a resposta igual a 1, 
+ * Caso não seja fica deslocando o bit exp,
+ * retornando o r(resto) dessa função;
  */
 
 lli fermat (número lli, lli expoente, lli mod);
