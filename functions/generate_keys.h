@@ -9,7 +9,7 @@ void  keys ();
  * O usuario ira digita o valor de um coprimo ao resultado da totiente, e depois o valor e verificado ate esta certo, ou seja a segunda chave publica;
  * Chama a funcao public_key, onde ira retorna o valor da segunda chave publica a multiplicao dos primos;
  * Chama a funcao inverso_modular, na qual ira retorna o valor da 3 chave privada;
- * E aberto o arquivo "key_public/key_public.txt", onde ira guarda as chaves publicas;
+ * Abre o arquivo "key_public/key_public.txt", onde ira guarda as chaves publicas;
  * O arquivo "key_private/key_private.txt", ficara guardado as chaves privadas;
  */
 
