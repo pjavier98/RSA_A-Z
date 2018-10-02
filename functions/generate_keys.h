@@ -18,11 +18,11 @@ void  mdc (lli num_1, lli num_2, lli * cont);
  */
 
  short primo (lli num);
-/* Na qual verifica se o numero e primo ou nao;
+/* Na qual verifica se o numero é primo ou nao;
  */
 
  short coprimo (lli num_1, lli num_2);
-/* Verifica se o numero e coprimo ou nao;
+/* Verifica se o numero é coprimo ou nao;
  */
 
 lli totiente (lli key_1, lli key_2);
@@ -34,13 +34,14 @@ lli public_key (lli p, lli q);
  */
 
 lli linear_comb (lli num_1, lli num_2, lli coef_s, lli cont);
-/* primeiro verifica se o numero e divisilve por ele ou nao (cont == 1), ou o contador do mds e 2, para receber o coeficiente;
- * caso o numero tenha + de um divisor  (falta completar)
+/* primeiro verifica se o numero é divisivel por ele ou não, ou o contador do mdc é 2;
+ * caso o numero tenha mais de um divisor, cria um array com o tamanho do cont;
+ * depois entra no loop que so acaba quando o temp1 % temp == 0 (falta completar);
  */
 
 lli inverso_modular (lli expoente, lli res_totiente);
-/* Chama afucao mds, que ira por meio de ponteiro recebe o cont (quantidade de loops da funcao mds);
- * Depois executa a funcao liner_comb, que ira retorna o resultado do coeficente (falta completar); 
+/* Chama a fuçao mdc, que ira por meio de ponteiro recebe o cont (quantidade de loops da funcao mdc);
+ * Depois executa a função liner_comb, que ira retorna o resultado do coeficente (falta completar); 
  */
 
 # endif
