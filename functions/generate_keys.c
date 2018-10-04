@@ -126,6 +126,19 @@ int coprimo(lli num_1, lli num_2)
 //     return inverso;
 // }
 
+lli inverso_modular(lli expoente, lli res_totiente) {
+    lli inverso = 0;
+    while(1)
+    {
+        if((inverso * expoente) % res_tot == 1)
+        {
+            break;
+        }
+        inverso++;
+    }
+    return inverso;
+}
+
 void keys()
 {
     int num;
@@ -163,17 +176,10 @@ void keys()
         printf("%lld não é coprimo a %lld, digite novamente:\n",expoente,res_tot);
         scanf("%lld",&expoente);
     }
-   
+
     lli n = public_key(p , q); 
-    //d = inverso_modular(expoente, res_tot); 
-    while(1)
-    {
-        if((d * expoente) % res_tot == 1)
-        {
-            break;
-        }
-        d++;
-    }
+    d = inverso_modular(expoente, res_tot); 
+    
     FILE *public = fopen("key_public/key_public.txt", "w");
     fprintf(public, "%lld %lld", n, expoente);
     fclose(public);
