@@ -11,7 +11,6 @@ int main()
     printf("Selecione a opção 2 para Criptografar:\n");
     printf("Selecione a opção 3 para Descriptografar:\n");
     scanf("%lld", &valor);
-    printf("\n");
 
     switch (valor)
     {

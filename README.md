@@ -1,2 +1,2 @@
-# RSA_A-Z
-Projeto Criptografia RSA Matematica Discreta
+# RSA_Project
+Repositorio para o projeto de RSA de Matématica Discreta

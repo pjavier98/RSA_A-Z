@@ -8,12 +8,7 @@ lli exponentiation (lli num, lli exp, lli mod);
 /* 
  * Entra em um loop ate que o expoente seja 0, faz um bit a bit e verifica se o 
  * ultimo bit for 1,   se for 1 quer dizer que o numero é impar e ele entra no if.
- * retornando o r(resto) dessa função;
- */
-
-lli fermat (lli numero, lli expoente, lli mod);
-/* 
- * Recebe o resultado da função exponentiation rapida, retornando um long long int; 
+ * retornando o resto para a chamada na main;
  */
 
 void  txt_to_encrypt ();
